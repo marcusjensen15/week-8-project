@@ -40,14 +40,14 @@ require('project')
 #all above tests work
 
 
-describe ('#project anagram_check match counter') do
-  it("should count the number of matches between two strings")do
-    anagrams = Anagrams.new("crack","kcarc")
-
-    expect(anagrams.anagram_check).to(eq("The words are Anagrams!"))
-
-  end
-end
+# describe ('#project anagram_check match counter') do
+#   it("should count the number of matches between two strings")do
+#     anagrams = Anagrams.new("crack","kcarc")
+#
+#     expect(anagrams.anagram_check).to(eq("The words are Anagrams!"))
+#
+#   end
+# end
 
 describe ('#input 1 array') do
   it("should convert input 1 to a captialized array of words")do
@@ -99,7 +99,7 @@ describe ('#concat_anagram_check') do
 
     anagrams = Anagrams.new("hello friend","hello")
 
-    expect(anagrams.concat_anagram_check).to(eq("The words are neither Anagram nor Antigram"))
+    expect(anagrams.concat_anagram_check).to(eq("The word/phrase are neither Anagram nor Antigram"))
 
   end
 end
@@ -110,7 +110,7 @@ describe ('#anagram_manager') do
 
     anagrams = Anagrams.new("hello friend","heollfridne")
 
-    expect(anagrams.anagram_manager).to(eq("The words are Anagrams!"))
+    expect(anagrams.anagram_manager).to(eq("The word/phrase are Anagrams!"))
 
   end
 end
