@@ -87,9 +87,9 @@ end
 
 describe ('#array_vowel_check') do
   it("should count the word in an array if it contains a vowel")do
-    anagrams = Anagrams.new("crack kkkk aint cool","xxx xxx to xxx")
+    anagrams = Anagrams.new("crack dad aint cool","face man to lie piggy sue")
 
-    expect(anagrams.array_vowel_check).to(eq(4))
+    expect(anagrams.array_vowel_check).to(eq("All words in both phrases contain at least one vowel"))
 
   end
 end

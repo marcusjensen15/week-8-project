@@ -92,7 +92,12 @@ class Anagrams
 
     end
 
-    word_vowel_counter1 + word_vowel_counter2
+    if word_vowel_counter1 == input1_array.length && word_vowel_counter2 == input2_array.length
+
+    "All words in both phrases contain at least one vowel"
+
+  else "at least one of your inputted words does not contain a vowel"
+  end
 
 
   end
