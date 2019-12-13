@@ -45,25 +45,72 @@ class Anagrams
 
 
 
-  def vowel_check
 
-    if (@input1.include? "A") || (@input1.include? "E") || (@input1.include? "I" )|| (@input1.include? "O") || (@input1.include? "U") || (@input1.include? "Y")
 
-      if (@input2.include? "A") || (@input2.include? "E") || (@input2.include? "I" )|| (@input2.include? "O") || (@input2.include? "U") || (@input2.include? "Y")
+  # def vowel_check
+  #
+  #   if (@input1.include? "A") || (@input1.include? "E") || (@input1.include? "I" )|| (@input1.include? "O") || (@input1.include? "U") || (@input1.include? "Y")
+  #
+  #     if (@input2.include? "A") || (@input2.include? "E") || (@input2.include? "I" )|| (@input2.include? "O") || (@input2.include? "U") || (@input2.include? "Y")
+  #
+  #       "Both inputs are words"
+  #
+  #     else
+  #       "One of the inputs do not contain a vowel"
+  #
+  #     end
+  #
+  #
+  #   else "One of the inputs do not contain a vowel"
+  #
+  #   end
+  #
+  # end
 
-        "Both inputs are words"
 
-      else
-        "One of the inputs do not contain a vowel"
 
+  def array_vowel_check
+
+    word_vowel_counter1 = 0
+    word_vowel_counter2 = 0
+
+    @input1_array.each do |word1|
+
+      if (word1.include? "A") || (word1.include? "E") || (word1.include? "I" )|| (word1.include? "O") || (word1.include? "U") || (word1.include? "Y")
+
+        word_vowel_counter1 += 1
       end
-
-
-    else "One of the inputs do not contain a vowel"
 
     end
 
+    @input2_array.each do |word2|
+
+      if (word2.include? "A") || (word2.include? "E") || (word2.include? "I" )|| (word2.include? "O") || (word2.include? "U") || (word2.include? "Y")
+
+        word_vowel_counter2 += 1
+      end
+
+    end
+
+    word_vowel_counter1 + word_vowel_counter2
+
+
   end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

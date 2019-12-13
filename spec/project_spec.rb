@@ -84,3 +84,12 @@ describe ('#input 2 concat') do
 
   end
 end
+
+describe ('#array_vowel_check') do
+  it("should count the word in an array if it contains a vowel")do
+    anagrams = Anagrams.new("crack kkkk aint cool","xxx xxx to xxx")
+
+    expect(anagrams.array_vowel_check).to(eq(4))
+
+  end
+end
