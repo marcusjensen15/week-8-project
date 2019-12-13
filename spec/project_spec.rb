@@ -66,3 +66,21 @@ describe ('#input 2 array') do
 
   end
 end
+
+describe ('#input 1 concat') do
+  it("should eliminate all space between inputted capitalized strings")do
+    anagrams = Anagrams.new("crack heads aint cool","we love to dance")
+
+    expect(anagrams.input1_concat).to(eq("CRACKHEADSAINTCOOL"))
+
+  end
+end
+
+describe ('#input 2 concat') do
+  it("should eliminate all space between inputted capitalized strings")do
+    anagrams = Anagrams.new("crack heads aint cool","we love to dance")
+
+    expect(anagrams.input2_concat).to(eq("WELOVETODANCE"))
+
+  end
+end
