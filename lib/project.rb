@@ -17,16 +17,21 @@ class Anagrams
   end #ends input2 method
 
   def vowel_check
-
     # vowels = ["A","E","I","O","U","Y"] can incorporate this in a loop as a dryer solution, just getting it to work first
 
     if (@input1.include? "A") || (@input1.include? "E") || (@input1.include? "I" )|| (@input1.include? "O") || (@input1.include? "U") || (@input1.include? "Y")
 
+      if (@input2.include? "A") || (@input2.include? "E") || (@input2.include? "I" )|| (@input2.include? "O") || (@input2.include? "U") || (@input2.include? "Y")
+
+        "Both inputs are words"
+
+      else
+        "One of the inputs do not contain a vowel"
+
+      end #ends input 2 vowel check
 
 
-      "input 1 contains a vowel and is a word"
-
-    else "input 1 is not a word"
+    else "One of the inputs do not contain a vowel"
 
     end #ends vowel_check if statement
 

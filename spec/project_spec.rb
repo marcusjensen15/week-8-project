@@ -30,9 +30,9 @@ end
 
 describe ('#project input1 vowel check') do
   it("should check to see if input 1 contains vowels")do
-    anagrams = Anagrams.new("trtrtr","hello")
+    anagrams = Anagrams.new("crack","dad")
 
-    expect(anagrams.vowel_check).to(eq("input 1 is not a word"))
+    expect(anagrams.vowel_check).to(eq("One of the inputs do not contain a vowel"))
 
   end
 end
