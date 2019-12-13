@@ -42,7 +42,7 @@ require('project')
 
 describe ('#project anagram_check match counter') do
   it("should count the number of matches between two strings")do
-    anagrams = Anagrams.new("crack","rcack")
+    anagrams = Anagrams.new("crack","kcarc")
 
     expect(anagrams.anagram_check).to(eq("The words are Anagrams!"))
 
@@ -90,6 +90,16 @@ describe ('#array_vowel_check') do
     anagrams = Anagrams.new("crack dad aint cool","face man to lie piggy sue")
 
     expect(anagrams.array_vowel_check).to(eq("All words in both phrases contain at least one vowel"))
+
+  end
+end
+
+describe ('#concat_anagram_check') do
+  it("it should check to see if two phrases are anagrams, antigrams, or nothing. only testing with real words initially")do
+
+    anagrams = Anagrams.new("hello friend","hello")
+
+    expect(anagrams.concat_anagram_check).to(eq("The words are Anagrams!"))
 
   end
 end
