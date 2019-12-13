@@ -1,50 +1,50 @@
 require('rspec')
 require('project')
 
-describe ('#project length test') do
-  it("should check to see if the lengths of both inputs are equal")do
-    anagrams = Anagrams.new("hello","hello")
-
-    expect(anagrams.length_check).to(eq("Run vowel check function"))
-
-  end
-end
-
-describe ('#project input1 captitalize') do
-  it("should capitalize every letter for input one")do
-    anagrams = Anagrams.new("hello","hello")
-
-    expect(anagrams.input1_check).to(eq("HELLO"))
-
-  end
-end
-
-describe ('#project input2 captitalize') do
-  it("should capitalize every letter for input two")do
-    anagrams = Anagrams.new("hello","hello")
-
-    expect(anagrams.input2_check).to(eq("HELLO"))
-
-  end
-end
-
-describe ('#project input1 vowel check') do
-  it("should check to see if input 1 contains vowels")do
-    anagrams = Anagrams.new("crack","dad")
-
-    expect(anagrams.vowel_check).to(eq("One of the inputs do not contain a vowel"))
-
-  end
-end
+# describe ('#project length test') do
+#   it("should check to see if the lengths of both inputs are equal")do
+#     anagrams = Anagrams.new("hello","hello")
+#
+#     expect(anagrams.length_check).to(eq("Run vowel check function"))
+#
+#   end
+# end
+#
+# describe ('#project input1 captitalize') do
+#   it("should capitalize every letter for input one")do
+#     anagrams = Anagrams.new("hello","hello")
+#
+#     expect(anagrams.input1_check).to(eq("HELLO"))
+#
+#   end
+# end
+#
+# describe ('#project input2 captitalize') do
+#   it("should capitalize every letter for input two")do
+#     anagrams = Anagrams.new("hello","hello")
+#
+#     expect(anagrams.input2_check).to(eq("HELLO"))
+#
+#   end
+# end
+#
+# describe ('#project input1 vowel check') do
+#   it("should check to see if input 1 contains vowels")do
+#     anagrams = Anagrams.new("crack","dad")
+#
+#     expect(anagrams.vowel_check).to(eq("One of the inputs do not contain a vowel"))
+#
+#   end
+# end
 
 #all above tests work
 
 
 describe ('#project anagram_check match counter') do
   it("should count the number of matches between two strings")do
-    anagrams = Anagrams.new("crack","dad")
+    anagrams = Anagrams.new("crack","dadr")
 
-    expect(anagrams.anagram_check).to(eq(1))
+    expect(anagrams.anagram_check).to(eq(2))
 
   end
 end
