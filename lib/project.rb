@@ -48,28 +48,35 @@ class Anagrams
 
   def anagram_check
 
+    match_counter = 0
 
-    if @input1_length == @input2_length    #this will be replaced with boolean result of length_check
+    @input1.each do |in1|
+      @input2.each do |in2|
 
-      match_counter = 0
+        if in1 == in2
+          match_counter += 1
 
-      @input1.each do |in1|
-        @input2.each do |in2|
+      end #ends input2 loop
 
-          if in1 == in2
-            match_counter += 1
+    end #ends input1 loop
 
-          end # ends nested comparison if statement
+    match_counter
 
-
-        end #ends input2 loop
-      end #ends input1 loop
-
+  end
 
 
-    else
-      "the words are not anagrams"
-    end  # ends if statement within anagram_check testing if the two strings are the same length
+
+    # if @input1_length == @input2_length    #this will be replaced with boolean result of length_check
+    #
+    #
+    #
+    #
+    #
+    #
+    #
+    # elsif @input1_length != @input2_length
+    #   "the words are not anagrams"
+    # end  # ends if statement within anagram_check testing if the two strings are the same length
 
 
 
@@ -89,14 +96,3 @@ class Anagrams
   #####################################################################
 
 end #ends Anagrams class
-
-
-#####################################################################
-
-
-
-# will need to refactor code so vowel check and length check input true or false. if true run next function
-#you can also run the sort method and if those are equal it basically does the whole project for you
-
-
-# THE MASTER function will be like: if True and true and true and true then "the words are anigrams"

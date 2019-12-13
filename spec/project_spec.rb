@@ -36,3 +36,15 @@ describe ('#project input1 vowel check') do
 
   end
 end
+
+#all above tests work
+
+
+describe ('#project anagram_check match counter') do
+  it("should count the number of matches between two strings")do
+    anagrams = Anagrams.new("crack","dad")
+
+    expect(anagrams.anagram_check).to(eq(1))
+
+  end
+end
