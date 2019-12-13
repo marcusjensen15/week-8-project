@@ -20,7 +20,9 @@ class Anagrams
 
     # vowels = ["A","E","I","O","U","Y"] can incorporate this in a loop as a dryer solution, just getting it to work first
 
-    if @input1.include? "A" || @input1.include? "E" || @input1.include? "I" || @input1.include? "O" || @input1.include? "U" || @input1.include? "Y"
+    if (@input1.include? "A") || (@input1.include? "E") || (@input1.include? "I" )|| (@input1.include? "O") || (@input1.include? "U") || (@input1.include? "Y")
+
+
 
       "input 1 contains a vowel and is a word"
 
