@@ -108,7 +108,7 @@ end
 describe ('#anagram_manager') do
   it("should call array_vowel_check method. if that is true proceed to call concat_anagram_check")do
 
-    anagrams = Anagrams.new("hello friend","he oll fridne")
+    anagrams = Anagrams.new("hello friend","heollfridne")
 
     expect(anagrams.anagram_manager).to(eq("The words are Anagrams!"))
 

@@ -1,6 +1,5 @@
 class Anagrams
 
-
   def initialize(input1, input2)
     @input1 = input1.upcase
     @input2 = input2.upcase
@@ -12,8 +11,6 @@ class Anagrams
 
     @input1_concat = @input1.delete(" ")
     @input2_concat = @input2.delete(" ")
-
-
 
   end
 
@@ -96,7 +93,7 @@ class Anagrams
 
     true
 
-  else false 
+  else false
   end
 
 
@@ -182,23 +179,22 @@ class Anagrams
 
     if @input1 == @input2
 
-      "These are the same word"
+      "These are the same word/phrase"
 
     elsif match_counter == @input1_concat.length && match_counter == @input2_concat.length
 
-      "The words are Anagrams!"
+      "The words/phrase are Anagrams!"
 
     elsif match_counter == 0
-      "The words are Antigrams"
+      "The words/phrase are Antigrams"
 
-    else "The words are neither Anagram nor Antigram"
+    else "The words/phrase are neither Anagram nor Antigram"
 
     end
 
   end #end of concat_anagram_check function
 
-
-
+#below is the 'master anagram function to get the final result '
 
   def anagram_manager
 
@@ -211,18 +207,7 @@ class Anagrams
     end
   end
 
-
-
-
-
-
-
-
-
-
-
-
-
+  #above is the 'master anagram function to get the final result (including vowel checking)
 
   def length_check
     if @input1_length != @input2_length
