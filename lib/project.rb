@@ -69,9 +69,22 @@ class Anagrams
 
     end  #end of first loop
 
-    match_counter
+    # match_counter
 
-    
+    if @input1 == @input2
+
+      "These are the same word"
+
+    elsif match_counter == @input1_length && match_counter == @input2_length
+
+      "The words are Anagrams!"
+
+    elsif match_counter == 0
+      "The words are Antigrams"
+
+    else "The words are neither Anagram nor Antigram"
+
+    end
 
   end #end of anagram_check function
 

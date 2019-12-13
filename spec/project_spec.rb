@@ -42,9 +42,9 @@ require('project')
 
 describe ('#project anagram_check match counter') do
   it("should count the number of matches between two strings")do
-    anagrams = Anagrams.new("crack","ccccccccccccccckr")
+    anagrams = Anagrams.new("crack","rcack")
 
-    expect(anagrams.anagram_check).to(eq(4))
+    expect(anagrams.anagram_check).to(eq("The words are neither Anagram nor Antigram"))
 
   end
 end
