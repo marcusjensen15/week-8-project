@@ -16,3 +16,15 @@ puts "Your result: "
 
 
 puts anagram.anagram_manager
+
+
+puts "Would you like to test more phrases? Enter: Y or N"
+
+again = gets.chomp.upcase
+
+if again == "Y"
+  system("ruby app.rb")
+elsif again == "N"
+  puts "Thanks for Playing!"
+
+end

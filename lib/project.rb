@@ -179,16 +179,16 @@ class Anagrams
 
     if @input1 == @input2
 
-      "These are the same word/phrase"
+      "This are the same word/phrase"
 
     elsif match_counter == @input1_concat.length && match_counter == @input2_concat.length
 
-      "The words/phrase are Anagrams!"
+      "The word/phrase are Anagrams!"
 
     elsif match_counter == 0
-      "The words/phrase are Antigrams"
+      "The word/phrase are Antigrams"
 
-    else "The words/phrase are neither Anagram nor Antigram"
+    else "The word/phrase are neither Anagram nor Antigram"
 
     end
 
