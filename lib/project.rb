@@ -51,10 +51,16 @@ class Anagrams
 
     if @input1_length == @input2_length    #this will be replaced with boolean result of length_check
 
-      counter = 0
+      match_counter = 0
 
       @input1.each do |in1|
         @input2.each do |in2|
+
+          if in1 == in2
+            match_counter += 1
+
+          end # ends nested comparison if statement
+
 
         end #ends input2 loop
       end #ends input1 loop
