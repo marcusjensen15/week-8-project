@@ -27,3 +27,12 @@ describe ('#project input2 captitalize') do
 
   end
 end
+
+describe ('#project input1 vowel check') do
+  it("should check to see if input 1 contains vowels")do
+    anagrams = Anagrams.new("hello","hello")
+
+    expect(anagrams.vowel_check).to(eq("input 1 contains a vowel and is a word"))
+
+  end
+end
