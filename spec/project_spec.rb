@@ -89,7 +89,7 @@ describe ('#array_vowel_check') do
   it("should count the word in an array if it contains a vowel")do
     anagrams = Anagrams.new("crack dad aint cool","face man to lie piggy sue")
 
-    expect(anagrams.array_vowel_check).to(eq("All words in both phrases contain at least one vowel"))
+    expect(anagrams.array_vowel_check).to(eq(true))
 
   end
 end
@@ -99,7 +99,18 @@ describe ('#concat_anagram_check') do
 
     anagrams = Anagrams.new("hello friend","hello")
 
-    expect(anagrams.concat_anagram_check).to(eq("The words are Anagrams!"))
+    expect(anagrams.concat_anagram_check).to(eq("The words are neither Anagram nor Antigram"))
+
+  end
+end
+
+
+describe ('#anagram_manager') do
+  it("should call array_vowel_check method. if that is true proceed to call concat_anagram_check")do
+
+    anagrams = Anagrams.new("hello friend","he oll fridne")
+
+    expect(anagrams.anagram_manager).to(eq("The words are Anagrams!"))
 
   end
 end

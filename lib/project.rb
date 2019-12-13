@@ -94,9 +94,9 @@ class Anagrams
 
     if word_vowel_counter1 == input1_array.length && word_vowel_counter2 == input2_array.length
 
-    "All words in both phrases contain at least one vowel"
+    true
 
-  else "at least one of your inputted words does not contain a vowel"
+  else false 
   end
 
 
@@ -199,6 +199,17 @@ class Anagrams
 
 
 
+
+  def anagram_manager
+
+    if array_vowel_check() == true
+
+      concat_anagram_check()
+
+    else "One or more words in your entry phrases does not contain a vowel"
+
+    end
+  end
 
 
 
