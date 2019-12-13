@@ -44,7 +44,25 @@ describe ('#project anagram_check match counter') do
   it("should count the number of matches between two strings")do
     anagrams = Anagrams.new("crack","rcack")
 
-    expect(anagrams.anagram_check).to(eq("The words are neither Anagram nor Antigram"))
+    expect(anagrams.anagram_check).to(eq("The words are Anagrams!"))
+
+  end
+end
+
+describe ('#input 1 array') do
+  it("should convert input 1 to a captialized array of words")do
+    anagrams = Anagrams.new("crack heads aint cool","rcack")
+
+    expect(anagrams.input1_array).to(eq(["CRACK", "HEADS", "AINT", "COOL"]))
+
+  end
+end
+
+describe ('#input 2 array') do
+  it("should convert input 2 to a captialized array of words")do
+    anagrams = Anagrams.new("crack heads aint cool","we love to dance")
+
+    expect(anagrams.input2_array).to(eq(["WE", "LOVE", "TO", "DANCE"]))
 
   end
 end

@@ -6,16 +6,36 @@ class Anagrams
     @input2 = input2.upcase
     @input1_length = input1.length
     @input2_length = input2.length
+
+    @input1_array = @input1.split(" ")
+    @input2_array = @input2.split(" ")
+
+    @input1_concat = @input1.delete(" ")
+    @input2_concat = @input2.delete(" ")
+
+
+
   end
-
-
-
 
   def input1_check
     @input1
   end
 
+  def input1_array
+    @input1_array
+  end
 
+  def input2_array
+    @input2_array
+  end
+
+  def input1_concat
+    @input1_concat
+  end
+
+  def input2_concat
+    @input2_concat
+  end
 
 
 
