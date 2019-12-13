@@ -52,23 +52,28 @@ class Anagrams
     match_counter = 0
 
     @input1.each_char do |in1|
+      hit_counter = 0
       @input2.each_char do |in2|
 
         if in1 == in2
-          hit_counter = 0
-          match_counter += 1
+
           next if hit_counter >= 1
+          hit_counter += 1
+          match_counter += 1
 
 
-        end
 
-      end
+        end #end of if statement
 
-    end
+      end  #end of second loop
+
+    end  #end of first loop
 
     match_counter
 
-  end
+    
+
+  end #end of anagram_check function
 
 
 
