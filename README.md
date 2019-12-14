@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application will accept two inputs from the user, and compare them against to each other to determine if they are: anagrams, antigrams, or neither. This application will accept single words along with entire phrases. The user can run this application with their Mac terminal by running app.rb _
+_This application will accept two inputs from the user, and compare them against to each other to determine if they are: anagrams, antigrams, or neither. This application will accept single words along with entire phrases. The user can run this application with their Mac terminal by running app.rb_
 
 ## Setup/Installation Requirements
 

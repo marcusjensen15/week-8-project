@@ -106,7 +106,7 @@ class Anagrams
 
   end #end of concat_anagram_check function
 
-#below is the 'master anagram function to get the final result '
+#below is the 'master anagram' function to get the final result
 
   def anagram_manager
 
